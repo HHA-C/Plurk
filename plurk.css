@@ -1,0 +1,38 @@
+body{background: url(https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-ash4/316852_226174960842647_326418541_n.jpg); border:hidden; margin: 0;}
+
+ /* ==直接下半部全透明CSS語法=== */
+
+#plurk-dashboard, #plurk_form ,#toggle_tab , div#footer {opacity: 0.3; filter: alpha(opacity=30);}
+
+/* =噗半透明CSS語法= */
+.plurk{opacity: 0.50;filter: alpha(opacity=50);}
+
+/* =plurk LOGO和生物透明CSS語法= */
+#dynamic_logo, .cmp_plurk{opacity: 0.1;filter: alpha(opacity=0);}
+#creature{opacity: 0.1;filter: alpha(opacity=10);}
+
+ /* =下面這些的邊框要透明的話多加上邊線透明CSS語法，
+
+border:hidden;
+
+===== */
+
+ 
+
+/* =河道透明CSS語法== */
+#timeline_holder {background:none; border:none;}
+
+ 
+
+/* =河道左邊BAR透明CSS語法== */
+.day_bg .div_inner{background: none;border:hidden;}
+
+/* =時間軸背景透明CSS語法== */
+
+#bottom_line {background:none; border:none;}
+#timeline_bg {opacity: 0;filter: alpha(opacity=0);}
+ 
+
+/* ===下方區塊隱藏效果=== */
+div#dashboard_holder, ul#filter_tab{filter:alpha(opacity=0)!important ;opacity:0!important;} 
+div#dashboard_holder:hover ,ul#filter_tab:hover{filter:alpha(opacity=100) !important;opacity:1 !important;}
