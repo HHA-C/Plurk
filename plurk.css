@@ -1,6 +1,15 @@
+/*
+Update Log:
+    2022-06-03
+    hide unread message (.updater)
+    enlarge timeline font size to 18px
+    fix selector: body -> ._lc_ 
+*/
+
 /* Begin */
 
-body {
+/* body would be parsed to ._lc_*/
+._lc_ {
 /* 	background: url(https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-ash4/316852_226174960842647_326418541_n.jpg); */
 /* 	//images.plurk.com/bg/6922031-48189.jpg */
 /* https://th.bing.com/th/id/R.851b1b1a3c1cccf79e13b5363097ac6b?rik=SPi7%2fzfc7WjxBQ&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f35000000%2fKawaii-killua-zoldyck-2011-35059008-1800-996.jpg&ehk=SkeJ%2bcsA9dLIhGafJWwFkn37MN1Ls%2bYC6Lyw2y9AZQc%3d&risl=&pid=ImgRaw&r=0 */
@@ -22,11 +31,13 @@ body {
 /* #dashboard_holder	>	#plurk-dashboard	>	#plurk_form */
 /* ===下方區塊隱藏效果=== */
 div#dashboard_holder,
-ul#filter_tab {
+ul#filter_tab,
+div#updater {
     opacity: 0 !important;
 }
 div#dashboard_holder:hover,
-ul#filter_tab:hover {
+ul#filter_tab:hover,
+div#updater:hover {
     opacity: 1 !important;
 }
 
@@ -55,8 +66,23 @@ div#footer {
 /* =噗半透明CSS語法= */
 .plurk {
     opacity: 0.75;
+    font-size: 18px; 
 }
 
+.plurk a.pictureservices {
+    max-width: 100%;
+}
+
+.plurk a.pictureservices img {
+    height: 150px;
+    display: block;
+    max-width: 100%;
+}
+/* not inside ._lc_
+.cbox_right {
+    font-size: 18px;
+}
+ */
 /* =plurk LOGO和生物透明CSS語法= */
 /* redundant */
 /*
